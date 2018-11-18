@@ -6,67 +6,96 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-<div id="title">
-    <h3></h3>
+<div id="title" class="title-top">
+    <h1>Survey Form</h1>
 </div>
 <div class="form-wrap">
-<div id="description"></div>
-<form id="survey-form">
-    <label id="name-label"><sup>*</sup>Name</label><input id="name" type="text" placeholder="Name">
-    <label id="email-label"><sup>*</sup>Email</label><input id="email" type="email" required placeholder="Email">
-    <label id="number-label"><sup>*</sup>Age</label><input id="number" type="number" name="age" min="1" max="125" required placeholder="Age">
-    <label>Which option best describes your current role?</label>
-    <select id="dropdown">
-        <option disabled value>Select an option</option>
-        <option>Student</option>
-        <option>Full Time Job</option>
-        <option>Full Time Learner</option>
-        <option>Prefer not to say</option>
-        <option>Other</option>
-    </select>
-        <label><sup>*</sup> How likely is that you would recommend freeCodeCamp to a friend?</label>
-    <ul>
-        <li><input name="radio-buttons" type="radio" value="1"><span>Definitely</span></li>
-        <li><input name="radio-buttons" type="radio" value="2"><span>Maybe</span></li>
-        <li><input name="radio-buttons" type="radio" value="3"><span>Not sure</span></li>
-    </ul>
-        <label>What do you like most in FCC:</label>
-        <select>
-            <option>Select an option</option>
-            <option>Challanges</option>
-            <option>Projects</option>
-            <option>Community</option>
-            <option>Open Source</option>
-        </select>
-    <label>Things that should be improved in the future
-        (Check all that apply):</label>
-    <ul>
-        <li><input type="checkbox"><span>Front-end Projects</span></li>
-        <li><input type="checkbox"><span>Back-end Projects</span></li>
-        <li><input type="checkbox"><span>Data Visualization</span></li>
-        <li><input type="checkbox"><span>Challenges</span></li>
-        <li><input type="checkbox"><span>Open Source Community</span></li>
-        <li><input type="checkbox"><span>FGitter help rooms</span></li>
-        <li><input type="checkbox"><span>Videos</span></li>
-        <li><input type="checkbox"><span>City Meetups</span></li>
-        <li><input type="checkbox"><span>Wiki</span></li>
-        <li><input type="checkbox"><span>Forum</span></li>
-        <li><input type="checkbox"><span>Additional Courses</span></li>
-    </ul>
-    <label>Any Comments or Suggestions?</label>
-    <textarea placeholder="Enter your comment here..."></textarea>
-    <button type="submit">Submit</button>
-
-
-
-
-
-
-
-
-
-
-</form>
+<div id="description">Let us know how we can improve freeCodeCamp</div>
+    <form id="survey-form">
+        <div class="form-container">
+            <div class="left-block">
+                <label id="name-label"><sup>*</sup>Name:</label>
+                <label id="email-label"><sup>*</sup>Email:</label>
+                <label id="number-label"><sup>*</sup>Age:</label>
+            </div>
+            <div class="right-block">
+                <input id="name" type="text" placeholder="Enter your name">
+                <input id="email" type="email" required placeholder="Enter your Email">
+                <input id="number" type="number" name="age" min="1" max="125" required placeholder="Age">
+            </div>
+        </div>
+        <div class="form-container">
+            <div class="left-block">
+                <label>Which option best<br> describes your current role?</label>
+            </div>
+            <div class="right-block">
+                <select id="dropdown">
+                    <option disabled value>Select an option</option>
+                    <option>Student</option>
+                    <option>Full Time Job</option>
+                    <option>Full Time Learner</option>
+                    <option>Prefer not to say</option>
+                    <option>Other</option>
+                </select>
+            </div>
+        </div>
+        <div class="form-container">
+            <div class="left-block">
+                <label><sup>*</sup> How likely is that you would recommend freeCodeCamp to a friend?</label>
+            </div>
+            <div class="right-block">
+                <ul>
+                    <li><input name="radio-buttons" type="radio" value="1"><span>Definitely</span></li>
+                    <li><input name="radio-buttons" type="radio" value="2"><span>Maybe</span></li>
+                    <li><input name="radio-buttons" type="radio" value="3"><span>Not sure</span></li>
+                </ul>
+            </div>
+        </div>
+        <div class="form-container">
+            <div class="left-block">
+                <label>What do you like most in FCC:</label>
+            </div>
+            <div class="right-block">
+                <select>
+                    <option>Select an option</option>
+                    <option>Challanges</option>
+                    <option>Projects</option>
+                    <option>Community</option>
+                    <option>Open Source</option>
+                </select>
+            </div>
+        </div>
+        <div class="form-container">
+            <div class="left-block">
+                <label>Things that should be improved in the future
+                    (Check all that apply):</label>
+            </div>
+            <div class="right-block">
+                <ul>
+                    <li><input type="checkbox"><span>Front-end Projects</span></li>
+                    <li><input type="checkbox"><span>Back-end Projects</span></li>
+                    <li><input type="checkbox"><span>Data Visualization</span></li>
+                    <li><input type="checkbox"><span>Challenges</span></li>
+                    <li><input type="checkbox"><span>Open Source Community</span></li>
+                    <li><input type="checkbox"><span>FGitter help rooms</span></li>
+                    <li><input type="checkbox"><span>Videos</span></li>
+                    <li><input type="checkbox"><span>City Meetups</span></li>
+                    <li><input type="checkbox"><span>Wiki</span></li>
+                    <li><input type="checkbox"><span>Forum</span></li>
+                    <li><input type="checkbox"><span>Additional Courses</span></li>
+                </ul>
+            </div>
+        </div>
+        <div class="form-container">
+            <div class="left-block">
+                <label>Any Comments or Suggestions?</label>
+            </div>
+            <div class="right-block">
+                <textarea placeholder="Enter your comment here..."></textarea>
+            </div>
+        </div>
+        <button type="submit" id="submit">Submit</button>
+    </form>
 </div>
 
 
